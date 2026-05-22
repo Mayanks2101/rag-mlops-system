@@ -16,7 +16,7 @@ if minikube status --format='{{.Host}}' 2>/dev/null | grep -q "Running"; then
     echo "    ✔ Minikube is already running."
 else
     echo "    Starting Minikube (docker driver)..."
-    minikube start --driver=docker --memory=1800 --cpus=2
+    minikube start --driver=docker --memory=3072 --cpus=2
     echo "    ✔ Minikube started."
 fi
 
